@@ -18,7 +18,10 @@ namespace Card.Cross.IoC
 
             // Domain Services
             services.AddScoped<ICardService, CardService>();
-            
+
+            //Cache Service
+            services.AddScoped<ICacheService, CacheService>();
+
             //Repository
             services.AddScoped<ICardRepository, CardRepository>();
 

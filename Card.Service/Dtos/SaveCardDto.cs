@@ -8,6 +8,10 @@ namespace Card.Service.Dtos
 {
     public class SaveCardDto
     {
+        public SaveCardDto()
+        {
+        }
+
         public SaveCardDto(int customerId, long cardNumber, int cvv)
         {
             CustomerId = customerId;
