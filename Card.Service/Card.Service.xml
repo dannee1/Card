@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Card.Service</name>
+    </assembly>
+    <members>
+        <member name="M:Card.Service.Controllers.BuyerController.Get(System.Int32,System.Int32)">
+            <summary>
+            Retorna uma lista de clientes
+            </summary>
+            <param name="actualPage">pagina atual</param>
+            <param name="pageSize">itens por página</param>
+            <returns>Lista paginada de clientes</returns>
+        </member>
+        <member name="M:Card.Service.Controllers.CardController.Get(System.Guid)">
+            <summary>
+            Retorna o Card de uma determinada venda
+            </summary>
+            <param name="orderID">ID da venda</param>
+            <returns>objeto de Card</returns>
+        </member>
+        <member name="M:Card.Service.Controllers.DiskController.GetByGenre(Card.Domain.Enumerators.DiskGenreEnum,System.Int32,System.Int32)">
+            <summary>
+            Obter disco pelo gênero
+            </summary>
+            <param name="genre">Gênero</param>
+            <param name="actualPage">Pagina atual</param>
+            <param name="pageSize">Itens por pagina</param>
+            <returns>Discos</returns>
+        </member>
+        <member name="M:Card.Service.Controllers.DiskController.GetDiskById(System.Guid)">
+            <summary>
+            Obter disco pelo ID
+            </summary>
+            <param name="id">ID do disco</param>
+            <returns>Disco</returns>
+        </member>
+        <member name="M:Card.Service.Controllers.OrderController.Get(System.Guid)">
+            <summary>
+            Obter pedido pelo ID 
+            </summary>
+            <param name="id">ID</param>
+            <returns>Pedido</returns>
+        </member>
+        <member name="M:Card.Service.Controllers.OrderController.GetPaged(System.DateTime,System.DateTime,System.Int32,System.Int32)">
+            <summary>
+            Obter lista de pedidos
+            </summary>
+            <param name="begin">Data de Inicio</param>
+            <param name="finalDate">Data de fim</param>
+            <param name="actualPage">Página atual</param>
+            <param name="pageSize">Itens por página</param>
+            <returns>Lista paginada de pedido</returns>
+        </member>
+        <member name="M:Card.Service.Controllers.OrderController.PlaceOrder(Card.Service.ViewModels.BasketViewModel)">
+            <summary>
+            Efetuar uma pedido
+            </summary>
+            <param name="basketViewModel">Dados do pedido</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
